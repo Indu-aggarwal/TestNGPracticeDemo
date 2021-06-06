@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/aggarwi1/Downloads/IntelliJ/TestNGPractice">
+        <parameter name="UserName" value="abcd@yopmail.com"></parameter>
+        <parameter name="Password" value="yopmailcom"></parameter>
+        <classes>
+
+            <class name="com.TestNG.basics.DemoClassTest">
+                <methods>
+                    <include name="test_1"/>
+                    <include name="test_2"/>
+                    <include name="test_4"/>
+                    <include name="test_5"/>
+                </methods>
+            </class>
+            <class name="com.TestNG.basics.TestNGCreateXMLBasic">
+                <methods>
+                    <parameter name="UserName" value="indu.aggarwal@telefonica.com"></parameter>
+                    <parameter name="Password" value="TestNGBasic"></parameter>
+                    <include name="test_1"/>
+                    <include name="test_2"/>
+                    <include name="test_3"/>
+                    <include name="test_4"/>
+                    <include name="test_5"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
